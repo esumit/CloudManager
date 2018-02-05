@@ -1,7 +1,7 @@
 What is CloudManager
 ---------------------------
-CloudManager provides list of REST APIs to automate and manage t
-he DigitalOCean preDefined Droplets(Cloud Machines) for
+CloudManager provides list of REST APIs to automate and manage 
+the DigitalOCean's preDefined Droplets(Cloud Machines) for
 project work related specific needs,
 e.g. preInstalled Images (it contains various predefined
 settings, processes and softwares).
