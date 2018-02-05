@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs" xmlns:cxf="http://cxf.apache.org/core"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+			            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+			            http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+                        http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+    		            ">
+
+    <context:component-scan base-package="com.cloudmanager.apis"/>
+
+    <jaxrs:server address="/cloudmanager-service" id="code3CxfServer">
+
+        <jaxrs:serviceBeans>
+            <ref bean="code3managerservice"/>
+        </jaxrs:serviceBeans>
+        <jaxrs:features>
+            <cxf:logging/>
+        </jaxrs:features>
+        <jaxrs:extensionMappings>
+            <entry key="json" value="application/json"/>
+        </jaxrs:extensionMappings>
+        <jaxrs:providers>
+            <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
+            <bean class="com.code3manager.apis.exception.AuthorizationExceptionMapper"/>
+            <bean class="com.code3manager.apis.exception.BadRequestExceptionMapper"/>
+            <bean class="com.code3manager.apis.exception.GenericExceptionMapper"/>
+            <bean class="com.code3manager.apis.exception.InternalExceptionMapper"/>
+        </jaxrs:providers>
+    </jaxrs:server>
+    <bean class="com.code3manager.apis.Code3ManagerServiceEndPointsImpl" id="CoedManagerApiImpl">
+    </bean>
+</beans>
