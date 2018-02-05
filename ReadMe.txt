@@ -8,7 +8,7 @@ project work related specific needs on a specific account,
 e.g. preInstalled Images (it contains various predefined
 settings, processes and softwares).
 
-![alt tag](https://github.com/esumit/CloudManager/blob/master/images/CloudManager%20and%20DigitalOcean.png)
+https://github.com/esumit/CloudManager/blob/master/images/CloudManager%20and%20DigitalOcean.png
 
 One of the major use case where it was written to use, its like
 a project work require to create a virtual machine by multiple applications
