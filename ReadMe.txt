@@ -15,6 +15,13 @@ over, it destroy the machine.
 
 All acivities logged into the database for further analysis.
 
+List of Interfaces :
+https://github.com/esumit/CloudManager/blob/master/src/main/java/com/cloudmanager/apis/ICloudManagerServiceEndPoints.java
+
+Its implementation from :
+https://github.com/esumit/CloudManager/blob/master/src/main/java/com/cloudmanager/apis/CloudManagerServiceEndPointsImpl.java
+
+
 List of CloudManager APIs
 ----------------------------
 
