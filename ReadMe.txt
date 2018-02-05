@@ -349,12 +349,14 @@ Request :
  How to build it ?
  ------------------
 
- Install maven and type command : mvn clean install
+ Install maven and type command : mvn clean install  (see below logs)
 
  It will produce : CloudManagerAPIs-1.0-SNAPSHOT.war
 
  Deploy to TomcatServer
 
+Logs Of mvn clean install
+-------------------------
  [INFO]
  [INFO] --- maven-install-plugin:2.4:install (default-install) @ CloudManagerAPIs ---
  [INFO] Installing /Users/eSumit/Documents/Public Github/GitPush/CloudManagerAPIs/target/Code3Manager.war to /Users/eSumit/.m2/repository/com/code3manager/CloudManagerAPIs/1.0-SNAPSHOT/CloudManagerAPIs-1.0-SNAPSHOT.war
