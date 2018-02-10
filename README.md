@@ -31,7 +31,7 @@ https://github.com/esumit/CloudManager/blob/master/src/main/java/com/cloudmanage
 
 ##### Request :
 
-,,,
+'''
 
  {
     "accessDetails":
@@ -42,7 +42,7 @@ https://github.com/esumit/CloudManager/blob/master/src/main/java/com/cloudmanage
     "MachineType":"Machine_LIVE"
 }
 
-,,,
+'''
 
 ##### Response :
 
