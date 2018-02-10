@@ -1,5 +1,5 @@
-What is CloudManager
----------------------------
+## What is CloudManager
+
 CloudManager manages preDefined Images on a specific account in DigitalOcean Cloud.  
 It have list of REST APIs to automate and manage 
 the DigitalOCean's preDefined Droplets(Cloud Machines) for
@@ -23,28 +23,30 @@ Its implementation from :
 https://github.com/esumit/CloudManager/blob/master/src/main/java/com/cloudmanager/apis/CloudManagerServiceEndPointsImpl.java
 
 
-List of CloudManager APIs
-----------------------------
+### List of CloudManager APIs
 
-+++++
-listMachines : It list the existing machines which are available to create replica of it.
+#### listMachines : It list the existing machines which are available to create replica of it.
 
+#### URL : https://CloudManagerAPIs.com/cloudmanager-service/cloudmanager/listMachines
 
-URL : https://CloudManagerAPIs.com/cloudmanager-service/cloudmanager/listMachines
+##### Request :
 
-Request :
+,,,
 
-     {
+ {
     "accessDetails":
     {
         "userId":"sumit@x.com",
         "accessToken":"ADSADDSDSFSFSFSDF"
     },
     "MachineType":"Machine_LIVE"
-  }
+}
 
-Response :
+,,,
 
+##### Response :
+
+'''
  {
 "listOfMachines": [
     {
@@ -73,6 +75,8 @@ Response :
         "countOfMachines": "2",
         "message": "Success"
     }
+    
+'''
 
 +++++
 CreateMachines : It used to create a cloud machine which is replica of any one of
