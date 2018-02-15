@@ -1,23 +1,20 @@
 What is CloudManager
 ---------------------------
-CloudManager manages preDefined Images for a specific account 
-in DigitalOcean Cloud.  
-It have list of REST APIs to automate and manage 
-the DigitalOCean's preDefined Droplets(Cloud Machines) for
-project work related specific needs on a specific account,
-e.g. preInstalled Images (it contains various predefined
-settings, processes and softwares).
-
+CloudManager is a library of REST APIs which manages preDefined VMs( Images of droplets) 
+for a specific account in DigitalOcean Cloud.  
+e.g. preInstalled Ubuntu Images configured 
+ for a specific purpose
 
 ![alt tag](https://github.com/esumit/CloudManager/blob/master/images/CloudManager%20and%20DigitalOcean.png)
 
 One of the major use case where it was written to use, its like
-a project work require to create a virtual machine by multiple applications
+a project work require to create virtual machines by multiple applications
 on runtime(with preInstalled stuff) for specific use, and that applications
 uses the created machine for a specific period and once the need is
-over, it destroy the machine.
+over, it destroy the machine/s.
 
-Example : A preDefinedVirtual Machine have preInstalled tomcat server, 
+Example : A preDefinedVirtual Machine e.g. ubuntu VM with 
+preConfigured and preInstalled tomcat server, 
 and preDefine deployed webapps which are connected with a centralised database. 
 This machine have all specific ssl certificates, ip rules, security groups and 
 other relevant configurations.
