@@ -35,43 +35,44 @@ URL : https://CloudManagerAPIs.com/cloudmanager-service/cloudmanager/listMachine
 
 Request :
 ````
-  {
-   	"accessDetails": {
-   		"userId": "sumit@x.com",
-   		"accessToken": "ADSADDSDSFSFSFSDF"
-   	},
-   	"MachineType": "Machine_LIVE"
-   }
-  ````
+{
+  "accessDetails": {
+    "userId": "sumit@x.com",
+    "accessToken": "ADSADDSDSFSFSFSDF"
+  },
+  "MachineType": "Machine_LIVE"
+}
+````
 
 Response :
 ````
 {
-	"listOfMachines": [{
-			"masterId": "1",
-			"givenName": "Machine-2GB",
-			"imageId": "XXXXXX",
-			"creationTime": "2017-09-04T06:52:19Z",
-			"hwSwConfig": "Ubuntu1604-2gb-nyc3&sfo1-vcpu2-disk40gb",
-			"desc": "Machine deployed in Ubuntu1604-2gb-nyc3&sfo1-vcpu2-disk40gb VM. ",
-			"mode": "MACHINE_LIVE",
-			"whoAdmin": "sumit@x.com",
-			"comments": "Machine added by sumit@x.com for test purpose."
-		},
-		{
-			"masterId": "2",
-			"givenName": "Machine-4GB",
-			"imageId": "XXXXX",
-			"creationTime": "2017-09-04T07:20:38Z",
-			"hwSwConfig": "Ubuntu1604-4gb-nyc3&sfo1-vcpu2-disk60gb",
-			"desc": "Machine deployed in Ubuntu1604-4gb-nyc3&sfo1-vcpu2-disk60gb VM.",
-			"mode": "MACHINE_LIVE",
-			"whoAdmin": "sumit@x.com",
-			"comments": "Machine added by sumit@x.com for test purpose."
-		}
-	],
-	"countOfMachines": "2",
-	"message": "Success"
+  "listOfMachines": [
+    {
+      "masterId": "1",
+      "givenName": "Machine-2GB",
+      "imageId": "XXXXXX",
+      "creationTime": "2017-09-04T06:52:19Z",
+      "hwSwConfig": "Ubuntu1604-2gb-nyc3&sfo1-vcpu2-disk40gb",
+      "desc": "Machine deployed in Ubuntu1604-2gb-nyc3&sfo1-vcpu2-disk40gb VM. ",
+      "mode": "MACHINE_LIVE",
+      "whoAdmin": "sumit@x.com",
+      "comments": "Machine added by sumit@x.com for test purpose."
+    },
+    {
+      "masterId": "2",
+      "givenName": "Machine-4GB",
+      "imageId": "XXXXX",
+      "creationTime": "2017-09-04T07:20:38Z",
+      "hwSwConfig": "Ubuntu1604-4gb-nyc3&sfo1-vcpu2-disk60gb",
+      "desc": "Machine deployed in Ubuntu1604-4gb-nyc3&sfo1-vcpu2-disk60gb VM.",
+      "mode": "MACHINE_LIVE",
+      "whoAdmin": "sumit@x.com",
+      "comments": "Machine added by sumit@x.com for test purpose."
+    }
+  ],
+  "countOfMachines": "2",
+  "message": "Success"
 }
 ````
 
@@ -83,31 +84,30 @@ CreateMachines is used to create a cloud machine, which is a replica of one of t
 Request:
 ````
 {
-  	"accessDetails": {
-  		"userId": "sumit@x.com",
-  		"accessToken": "ADSADDSDSFSFSFSDF"
-  	},
-  	"givenName": "Sumit4GBAnotherInstance",
-  	"sizeSlug": "TWOGB",
-  	"regionSlug": "SANFRANCISCO1",
-  	"imageId": "27563444",
-  	"tag": "DefaultTEST",
-  	"masterId": "1"
-  }
+  "accessDetails": {
+    "userId": "sumit@x.com",
+    "accessToken": "ADSADDSDSFSFSFSDF"
+  },
+  "givenName": "Sumit4GBAnotherInstance",
+  "sizeSlug": "TWOGB",
+  "regionSlug": "SANFRANCISCO1",
+  "imageId": "27563444",
+  "tag": "DefaultTEST",
+  "masterId": "1"
+}
 ````  
 
 Response :
 ````
 {
-	"MachineName": "Sumit4GBAnotherInstance",
-	"givenTag": "DefaultTEST",
-	"creationDateAndTime": "Fri Sep 08 16:13:16 IST 2017",
-	"ipv4Address": "UNKNOWN",
-	"pv6Address": "UNKNOWN",
-	"imageId": "61486962",
-	"resultStatus": "MACHINE_UCREATED",
-	"message": "Machine is on creation Status, get more information e.g. by calling : isMachineCreated API with
-	path likecloudmanager - service / cloudmanager / isMachineCreated "
+  "MachineName": "Sumit4GBAnotherInstance",
+  "givenTag": "DefaultTEST",
+  "creationDateAndTime": "Fri Sep 08 16:13:16 IST 2017",
+  "ipv4Address": "UNKNOWN",
+  "pv6Address": "UNKNOWN",
+  "imageId": "61486962",
+  "resultStatus": "MACHINE_UCREATED",
+  "message": "Machine is on creation Status, get more information e.g. by calling : isMachineCreated API with path likecloudmanager - service / cloudmanager / isMachineCreated "
 }
 ````
 destroyMachines : DestroyMachines destroys a machine once the work is completed.
