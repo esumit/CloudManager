@@ -5,7 +5,7 @@ CloudManager is a library of REST APIs designed to manage predefined Virtual Mac
 for a specific account in DigitalOcean Cloud. These VMs are images of droplets preconfigured 
 for a particular purpose, such as pre-installed Ubuntu images.
 
-![alt tag](https://github.com/esumit/CloudManager/blob/master/images/CloudManager%20and%20DigitalOcean.png)
+![alt tag](https://github.com/esumit/CloudManager/blob/master/images/cloudmanager.png)
 
 CloudManager is designed for projects that require creating virtual machines with pre-installed 
 software and configurations by multiple applications at runtime. These applications use the 
